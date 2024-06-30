@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
+body {
+  @apply text-base font-normal text-surface bg-dark;
+}
+
+label {
+  @apply cursor-pointer;
+}
+
+input,
+textarea {
+  @apply min-h-12 px-5 py-3 border border-outline bg-dark rounded-xl resize-none outline-none
+  transition-all duration-200;
+  &:hover {
+    @apply border-dark-outline;
+  }
+  &:focus {
+    @apply border-accent;
+  }
+  &::placeholder {
+    @apply text-dark-outline;
+  }
+}
+
+.main {
+  @apply flex font-sans;
+}
+
+.container {
+  @apply mx-auto my-0 max-w-[1430px] overflow-hidden;
+}
