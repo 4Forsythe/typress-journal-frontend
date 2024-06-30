@@ -1,0 +1,46 @@
+.card {
+  @apply w-full border border-dark-outline border-opacity-60 bg-contrast rounded-2xl shadow-sm overflow-hidden relative
+  transition-all duration-200 hover:border-outline;
+  &.contrasted {
+    @apply bg-dark;
+  }
+  .container {
+    @apply w-full h-full px-7 py-6 gap-2.5 flex flex-col;
+    .meta {
+      @apply gap-2.5 text-sm text-lite-outline flex items-center;
+      .link {
+        @apply z-10 font-bold text-accent hover:text-opacity-85
+        transition-colors duration-200;
+      }
+      .views {
+        @apply gap-1 flex items-center;
+        .icon {
+          @apply w-auto h-4;
+        }
+      }
+    }
+    .head {
+      @apply my-1;
+      &::before {
+        content: '';
+        @apply inset-0 z-0 absolute;
+      }
+      .title {
+        @apply text-2xl leading-6 font-bold overflow-hidden text-ellipsis;
+      }
+    }
+    .description {
+      @apply pr-2.5 truncate;
+    }
+    .actions {
+      @apply w-fit gap-2 z-10 inline-flex items-center;
+      .action {
+        @apply gap-1 flex items-center text-lite-outline hover:text-lite-gray
+        transition-colors duration-200;
+        .icon {
+          @apply h-5 w-auto;
+        }
+      }
+    }
+  }
+}
