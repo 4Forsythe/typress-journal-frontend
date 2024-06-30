@@ -1,0 +1,34 @@
+.wrapper {
+  @apply py-14;
+  .head {
+    @apply mb-8;
+    .title {
+      @apply text-4xl font-bold;
+    }
+    .description {
+      @apply mt-2.5;
+    }
+  }
+  .container {
+    @apply flex flex-col;
+    .group {
+      @apply mb-2.5;
+      .groupContainer {
+        @apply p-8 flex flex-col border border-dark-outline bg-contrast rounded-xl;
+        .groupTopic {
+          @apply mb-5 text-xl font-semibold;
+        }
+        .groupContent {
+          @apply gap-5 grid grid-cols-3;
+          .item {
+            @apply h-[40px] flex items-center hover:text-lite-gray
+            transition-colors duration-200;
+            .icon {
+              @apply mr-4 rounded-lg;
+            }
+          }
+        }
+      }
+    }
+  }
+}
