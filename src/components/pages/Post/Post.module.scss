@@ -1,0 +1,71 @@
+.wrapper {
+  .container {
+    @apply max-w-[760px] mx-auto my-0;
+    .header {
+      @apply mb-8 pt-12;
+      .topic {
+        @apply mb-2.5 gap-3 flex items-center;
+        .category {
+          @apply px-3.5 py-1 font-medium text-dark bg-accent rounded-3xl;
+        }
+        .meta {
+          @apply gap-1 flex items-center text-sm text-lite-outline;
+          .icon {
+            @apply text-lg;
+          }
+        }
+      }
+      .title {
+        @apply mb-5 text-5xl font-bold;
+      }
+      .synipsis {
+        @apply mb-5 text-3xl;
+      }
+      .actions {
+        @apply mb-10 gap-3 flex items-center;
+        .action {
+          @apply gap-1.5 flex items-center text-lite-outline hover:text-lite-gray
+          transition-colors duration-200;
+        }
+      }
+      .author {
+        @apply py-1 gap-2.5 flex items-center;
+        .authorInfo {
+          @apply gap-0.5 flex flex-col;
+          .authorName {
+            @apply text-sm font-bold;
+          }
+          .authorCaption {
+            @apply text-sm font-light;
+          }
+        }
+      }
+    }
+    .sections {
+      .section {
+        .title {
+          @apply mb-6 text-4xl font-semibold leading-tight;
+        }
+        .paragraph {
+          @apply mb-6 text-lg leading-8 break-words;
+        }
+      }
+    }
+    .footer {
+      @apply mb-4 pt-10;
+      .keywords {
+        @apply mb-6 flex flex-col;
+        .label {
+          @apply mb-4 text-2xl font-medium;
+        }
+        .tagbar {
+          @apply gap-2.5 flex flex-wrap items-center;
+          .tag {
+            @apply text-sm font-medium text-outline hover:text-lite-gray
+            transition-colors duration-150;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  @apply py-12;
+  .topic {
+    @apply mb-6;
+    .label {
+      @apply text-2xl font-medium;
+    }
+  }
+  .form {
+    @apply mb-10 flex flex-col;
+    .answerField {
+      @apply w-full h-32 mb-2.5;
+    }
+    .footer {
+      @apply flex items-start justify-between;
+      .notation {
+        @apply text-sm text-lite-gray;
+        .link {
+          @apply text-accent hover:underline;
+        }
+      }
+    }
+  }
+  .meta {
+    @apply flex items-center justify-between;
+    .sorters {
+      @apply gap-3 flex items-baseline;
+      .sorter {
+        @apply text-sm uppercase;
+        &.target {
+          @apply font-bold border-b border-surface;
+        }
+      }
+    }
+    .counter {
+      @apply text-sm;
+    }
+  }
+  .list {
+    @apply flex flex-col;
+  }
+}

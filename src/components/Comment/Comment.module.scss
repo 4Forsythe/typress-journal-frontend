@@ -1,0 +1,35 @@
+.wrapper {
+  @apply pt-10 gap-4 flex items-start;
+  .container {
+    @apply gap-1.5 flex flex-col;
+    .header {
+      @apply gap-2.5 flex items-baseline;
+      .username {
+        @apply text-sm font-semibold hover:text-lite-outline
+        transition-colors duration-200;
+      }
+      .badge {
+        @apply h-5 px-2 py-1 flex items-center justify-center text-xs text-dark bg-accent rounded-3xl;
+      }
+      .timestamp {
+        @apply text-xs text-lite-outline;
+      }
+    }
+    .content {
+      @apply mb-1.5;
+      .text {
+        @apply text-sm;
+      }
+      .editField {
+        @apply w-full mt-1.5;
+      }
+    }
+    .controls {
+      @apply gap-3.5 flex items-center relative;
+      .controlsButton {
+        @apply text-sm text-outline hover:text-lite-outline
+        transition-colors duration-200;
+      }
+    }
+  }
+}
