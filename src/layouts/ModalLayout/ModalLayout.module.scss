@@ -1,0 +1,8 @@
+.modal {
+  @apply inset-0 z-50 flex items-center justify-center fixed overflow-hidden;
+  .overlay {
+    content: '';
+    @apply inset-0 z-0 absolute overflow-hidden;
+    background-color: rgba(#000000, 0.35);
+  }
+}

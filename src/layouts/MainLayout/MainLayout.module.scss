@@ -1,0 +1,18 @@
+.wrapper {
+  @apply h-full pt-20 grid grid-cols-[290px,1fr];
+  .main {
+    @apply max-w-full col-start-2 col-span-1;
+    .container {
+      @apply h-full mx-auto my-0;
+      &.small {
+        @apply max-w-[760px];
+      }
+      &.medium {
+        @apply max-w-[1050px];
+      }
+      &.large {
+        @apply max-w-[1280px] bg-contrast;
+      }
+    }
+  }
+}

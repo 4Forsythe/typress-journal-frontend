@@ -1,0 +1,9 @@
+.wrapper {
+  @apply h-full py-8 grid grid-cols-[760px,260px] justify-between relative;
+  .content {
+    @apply w-full h-fit gap-5 flex flex-col;
+  }
+  .sidebar {
+    @apply top-[110px] h-fit gap-5 flex flex-col sticky;
+  }
+}
