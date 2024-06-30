@@ -1,0 +1,16 @@
+.card {
+  @apply flex flex-col relative;
+  .article {
+    @apply max-w-[600px] mb-2 z-10 inline-flex text-accent underline;
+  }
+  .content {
+    @apply max-w-[700px] mb-1.5 break-words;
+    &::before {
+      content: '';
+      @apply inset-0 z-0 absolute;
+    }
+  }
+  .meta {
+    @apply gap-4 inline-flex text-sm text-outline;
+  }
+}

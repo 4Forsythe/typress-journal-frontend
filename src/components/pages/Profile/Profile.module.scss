@@ -1,0 +1,49 @@
+.wrapper {
+  @apply pt-14 pb-32;
+  .head {
+    @apply mt-1.5 mb-12 gap-5 flex items-start;
+    .info {
+      @apply flex flex-col;
+      .username {
+        @apply mb-3 text-4xl font-bold;
+      }
+      .meta {
+        @apply gap-x-1.5 gap-y-2.5 flex flex-wrap;
+        .subscribe {
+          @apply h-[35px] px-4 py-1.5 gap-1.5 flex items-center justify-center text-dark bg-accent rounded-2xl
+          hover:bg-opacity-90 transition-colors duration-200;
+        }
+        .rating {
+          @apply flex flex-col;
+          h5 {
+            @apply mb-2 font-medium;
+          }
+          ul {
+            @apply flex flex-col;
+            li {
+              @apply mb-1.5 flex items-center justify-between;
+              .positive {
+                @apply text-accent;
+              }
+              .negative {
+                @apply text-outline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tabs {
+    @apply mb-7 gap-5 flex flex-wrap;
+    .tab {
+      @apply border-b-2 border-transparent;
+      &.target {
+        @apply font-bold border-lite-gray;
+      }
+    }
+  }
+  .container {
+    @apply mb-10 gap-5 flex flex-col;
+  }
+}
