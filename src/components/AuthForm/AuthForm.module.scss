@@ -1,0 +1,48 @@
+.container {
+  @apply w-[380px] h-fit my-8 p-8 flex flex-col justify-between bg-dark rounded-2xl relative;
+  .head {
+    @apply mb-3 text-3xl font-semibold;
+    .band {
+      @apply text-4xl font-bold;
+    }
+  }
+  .description {
+    @apply mb-5 text-sm;
+  }
+  .auth {
+    @apply mb-5 flex flex-col;
+    .form {
+      @apply w-full mb-4 gap-2 flex flex-col;
+      & > * {
+        @apply w-full;
+      }
+      .notification {
+        @apply px-5 py-2 w-fit inline-flex items-center justify-center text-sm text-surface bg-red-500 rounded-xl;
+      }
+      .input {
+        @apply px-3.5 py-2.5 font-medium border border-outline rounded-xl outline-none
+        transition-all duration-150;
+        &:focus {
+          @apply border-accent;
+        }
+        &.error {
+          @apply border-red-500;
+        }
+      }
+    }
+    .switch {
+      @apply text-sm text-outline font-bold inline-flex self-center hover:text-lite-gray
+      transition-all duration-200;
+    }
+  }
+  .privacy {
+    @apply text-center text-xs text-outline;
+  }
+  .closer {
+    @apply top-3 right-3 text-4xl absolute;
+    .icon {
+      @apply text-outline hover:text-lite-outline
+      transition-colors duration-150;
+    }
+  }
+}

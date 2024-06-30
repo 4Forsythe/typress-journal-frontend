@@ -1,0 +1,19 @@
+.section {
+  @apply gap-2.5 flex flex-col;
+  .header {
+    @apply flex items-center justify-between;
+    .title {
+      @apply text-xl font-bold;
+    }
+    .closer {
+      @apply text-2xl text-dark-outline hover:text-red-500
+      transition-colors duration-200;
+    }
+  }
+  .headerField {
+    @apply h-[50px] text-lg font-medium;
+  }
+  .textField {
+    @apply min-h-56;
+  }
+}

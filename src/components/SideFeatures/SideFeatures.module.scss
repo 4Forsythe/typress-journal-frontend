@@ -1,0 +1,28 @@
+.wrapper {
+  @apply w-full border border-dark-outline bg-contrast rounded-xl;
+  .container {
+    @apply p-5 flex flex-col;
+    .head {
+      @apply mb-4 font-bold;
+    }
+    .items {
+      @apply gap-5 flex flex-col;
+      .item {
+        @apply gap-4 flex items-center;
+        .icon {
+          @apply rounded-lg overflow-hidden;
+        }
+        .text {
+          @apply mb-2 break-words;
+        }
+      }
+    }
+    .more {
+      @apply gap-1.5 flex items-center hover:text-lite-outline
+      transition-colors duration-200;
+      .icon {
+        @apply w-auto h-full;
+      }
+    }
+  }
+}

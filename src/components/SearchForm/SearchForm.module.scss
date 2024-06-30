@@ -1,0 +1,33 @@
+.wrapper {
+  @apply h-full py-8;
+  .container {
+    @apply max-w-[760px] mx-auto my-0;
+    .search {
+      @apply mt-16 mb-12;
+      .form {
+        @apply w-full mb-3.5 flex relative;
+        .searchField {
+          @apply w-full h-20 pl-5 pr-20 text-4xl border-2 border-dark-outline bg-dark
+          transition-colors duration-200 hover:border-outline focus:border-accent;
+        }
+        .submit {
+          @apply w-20 h-20 p-1.5 top-0 right-0 inline-flex items-center justify-center absolute;
+          &:disabled {
+            .icon {
+              @apply opacity-20;
+            }
+          }
+          .icon {
+            @apply text-4xl;
+          }
+        }
+      }
+      .counter {
+        @apply uppercase;
+      }
+    }
+    .items {
+      @apply gap-7 flex flex-col;
+    }
+  }
+}

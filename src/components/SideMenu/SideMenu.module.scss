@@ -1,0 +1,38 @@
+.menu {
+  @apply h-full fixed;
+  .container {
+    @apply w-72 h-full px-7 py-8 overflow-y-auto;
+    .navbar {
+      @apply mb-12;
+      .tabs {
+        @apply mb-6 flex flex-col;
+        .head {
+          @apply mb-3 pl-1.5 text-xl font-semibold;
+        }
+        .tab {
+          @apply mb-1 px-1 py-1.5 gap-3 flex items-center justify-start rounded-lg
+          transition-colors duration-200;
+          &:hover {
+            @apply bg-dark-outline bg-opacity-30;
+            .icon {
+              @apply border-transparent;
+            }
+          }
+          &.selected {
+            @apply bg-accent;
+            .text {
+              @apply text-dark;
+            }
+          }
+          .icon {
+            @apply ml-2 p-1 flex items-center justify-center border border-outline bg-dark rounded-md
+            transition-colors duration-150;
+          }
+          .text {
+            @apply text-base;
+          }
+        }
+      }
+    }
+  }
+}

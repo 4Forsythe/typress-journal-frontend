@@ -1,0 +1,62 @@
+.wrapper {
+  @apply py-14;
+  .container {
+    @apply max-w-[760px] mx-auto my-0;
+    .title {
+      @apply mb-5 text-4xl font-bold;
+    }
+    .header {
+      @apply mb-8 flex items-center justify-between;
+      .link {
+        @apply w-fit gap-0.5 flex items-center text-lg font-light text-lite-gray
+        hover:underline;
+        .icon {
+          @apply w-auto h-4;
+        }
+      }
+    }
+    .description {
+      @apply mb-8 text-sm;
+    }
+    .form {
+      @apply gap-2.5 flex flex-col;
+      .main {
+        @apply gap-3 flex flex-col;
+        .headerField {
+          @apply h-[50px] text-xl font-medium;
+        }
+        .textField {
+          @apply min-h-72 text-base;
+        }
+      }
+      .subtitle {
+        @apply mb-1.5 text-sm;
+      }
+      .sections {
+        @apply gap-3 flex flex-col;
+      }
+      .media {
+        @apply flex flex-col;
+        .mediaContainer {
+          @apply w-full h-12 gap-1.5 flex items-center justify-center text-dark-outline border border-dashed border-outline rounded-xl
+          transition-all duration-200;
+          &:hover {
+            @apply border-dark-outline;
+          }
+          .icon {
+            @apply w-auto h-5;
+          }
+        }
+        .previewField {
+          @apply hidden;
+        }
+      }
+      .keywords {
+        @apply flex flex-col;
+      }
+      .action {
+        @apply mt-1.5 pl-1.5;
+      }
+    }
+  }
+}

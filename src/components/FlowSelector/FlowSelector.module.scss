@@ -1,0 +1,29 @@
+.select {
+  @apply inline-block relative;
+  .control {
+    @apply h-10 gap-1.5 flex items-center;
+    .title {
+      @apply px-5 py-1.5 text-dark bg-accent rounded-3xl shadow-sm;
+    }
+    .icon {
+      @apply w-auto h-5 transition-transform duration-200;
+      &.droped {
+        @apply rotate-180;
+      }
+    }
+  }
+  .dropdown {
+    @apply w-80 mt-2.5 py-2.5 bg-dark rounded-lg absolute;
+    box-shadow: 0 5px 10px rgba(#000000, 0.2);
+    .options {
+      @apply max-h-72 overflow-x-hidden;
+      .option {
+        @apply px-3.5 py-2.5 flex cursor-pointer hover:bg-outline hover:bg-opacity-20
+        transition-colors duration-200;
+        &.selected {
+          @apply text-dark bg-accent;
+        }
+      }
+    }
+  }
+}
