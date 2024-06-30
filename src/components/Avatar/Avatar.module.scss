@@ -1,0 +1,9 @@
+.wrapper {
+  @apply flex items-center justify-center bg-dark-outline rounded-full overflow-hidden;
+  &.medium {
+    @apply w-[90px] h-[90px] text-2xl font-bold;
+  }
+  &.small {
+    @apply w-[40px] h-[40px] text-sm font-medium;
+  }
+}

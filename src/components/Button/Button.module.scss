@@ -1,0 +1,19 @@
+.wrapper {
+  @apply w-fit px-6 py-2.5 font-medium block rounded-xl disabled:opacity-75
+  transition-all duration-200;
+  &.button {
+    @apply text-dark bg-surface;
+  }
+  &.submit {
+    @apply text-dark bg-accent;
+  }
+  &:hover {
+    @apply brightness-95;
+  }
+  &:active {
+    @apply brightness-90;
+  }
+  &:disabled {
+    @apply pointer-events-none select-none;
+  }
+}
